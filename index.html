@@ -23,30 +23,30 @@
   <body class="bg-[#f5fff6]">
     <header>
       <nav>
-        <div class="parent flex justify-between px-[60px] py-6 bg-white">
-          <div class="flex gap-3 items-center">
-            <img class="size-[50px]" src="./assets/logo.png" alt="" />
-            <h1 class="text-[#006747] text-2xl font-black font-hind">
+        <div class="parent flex justify-between md:px-[60px] px-2 py-6 bg-white">
+          <div class="flex gap-1 md:gap-3 items-center">
+            <img class="size-9 md:size-[50px]" src="./assets/logo.png" alt="" />
+            <h1 class="text-[#006747] md:text-2xl text-lg font-black font-hind">
               Emergency <br />
               Service
             </h1>
           </div>
 
-          <div class="flex gap-5 font-inter">
+          <div class="flex md:gap-5 gap-1 font-inter">
             <section
-              class="flex justify-center items-center gap-3 bg-[#41ff6b1a] p-3 rounded-[50px] w-[123px]"
+              class="flex justify-center items-center gap-1 md:gap-3 bg-[#41ff6b1a] p-3 rounded-3xl md:rounded-[50px] md:w-[123px]"
             >
               <h1 class="font-black text-base">0</h1>
-              <img src="./assets/heart.png" class="size-[30px]" alt="" />
+              <img src="./assets/heart.png" class=" size-4 md:size-[30px]" alt="" />
             </section>
             <section
-              class="flex justify-center items-center gap-3 bg-[#41ff6b1a] p-3 rounded-[50px] w-[123px]"
+              class="flex justify-center items-center gap-1 md:gap-3 bg-[#41ff6b1a] p-3 rounded-[50px] md:w-[123px]"
             >
               <h1 class="font-black text-base">100</h1>
-              <img src="./assets/coin.png" class="size-[24px]" alt="" />
+              <img src="./assets/coin.png" class="size-4 md:size-[24px]" alt="" />
             </section>
             <section
-              class="flex justify-center items-center gap-3 bg-[#00A63E] p-3 rounded-[50px] w-[123px] text-white font-[600]"
+              class="flex justify-center items-center gap-1 md:gap-3 bg-[#00A63E] p-3 rounded-[50px] md:w-[123px] text-white font-[600]"
             >
               <h1 class="text-base">2</h1>
               <h1>Copy</h1>
@@ -61,16 +61,16 @@
       <div
         class="w-full h-60 bg-linear-to-l from-[#013223] via-[#006747] to-[#013223] text-white font-hind flex justify-center items-center flex-col"
       >
-        <img src="./assets/logo-dark.png" alt="" class="size-[92px]" />
-        <h1 class="text-[40px] font-bold">Emergency Service Directory</h1>
-        <p class="font-semibold text-xl">
+        <img src="./assets/logo-dark.png" alt="" class="size-[60px] md:size-[92px]" />
+        <h1 class="text-2xl md:text-[40px] font-bold">Emergency Service Directory</h1>
+        <p class="font-medium md:text-xl text-base px-4 md:px-0 text-center text-gray-200 md:text-white">
           Government Emergency Services at Your Fingertip - A Project by
           Government of the People's Republic of Bangladesh
         </p>
       </div>
       <!-- cards and call history section -->
-      <div class="parent mt-12 max-w-[1800px] mx-auto pb-24">
-        <div id="cards" class="grid grid-cols-3 max-w-[1370px] gap-[30px]">
+      <div class="parent mt-5 md:mt-12 max-w-[1800px] mx-auto pb-24 md:flex  gap-[30px]">
+        <div id="cards" class="grid md:grid-cols-3 max-w-[1370px] gap-[30px]">
           <!-- cards -->
           <section class="flex flex-col gap-3 p-[32px] shadow-xl rounded-[12px] bg-white">
             <div>
@@ -388,7 +388,13 @@
             </div>
           </section>
         </div>
-        <div id="call"></div>
+        <div id="call  " class="w-[400px] h-[1140px] bg-white rounded-xl p-6 shadow-xl font-robo">
+                <section class="flex justify-between items-center">
+                  <h1><i class="fa-solid fa-clock"></i>Call History</h1>
+                  <button class="bg-[#00a63e] font-robo hover:bg-green-800 px-[36px] py-[12px] rounded-[50px] text-white">Clear</button>
+                </section>
+
+        </div>
       </div>
     </main>
   </body>
