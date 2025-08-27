@@ -12,7 +12,7 @@ for (i = 0; i < heart.length; i++) {
 const oka = document.getElementById("sob");
 oka.addEventListener("click", () => {
   const pp = document.getElementById("gg");
-  pp.innerHTML = ''
+  pp.innerHTML = "";
 });
 
 // call functions
@@ -30,7 +30,6 @@ document.getElementById("call-btn-1").addEventListener("click", () => {
     par.appendChild(newELement);
     const newValue = parseInt(coinCount.innerText) - 20;
     coinCount.innerText = newValue;
-     
   } else {
     alert("insufficient Balance for call");
   }
@@ -49,7 +48,6 @@ document.getElementById("call-btn-2").addEventListener("click", () => {
     par.appendChild(newELement);
     const newValue = parseInt(coinCount.innerText) - 20;
     coinCount.innerText = newValue;
-     
   } else {
     alert("insufficient Balance for call");
   }
@@ -68,7 +66,6 @@ document.getElementById("call-btn-3").addEventListener("click", () => {
     par.appendChild(newELement);
     const newValue = parseInt(coinCount.innerText) - 20;
     coinCount.innerText = newValue;
-     
   } else {
     alert("insufficient Balance for call");
   }
@@ -87,7 +84,6 @@ document.getElementById("call-btn-4").addEventListener("click", () => {
     par.appendChild(newELement);
     const newValue = parseInt(coinCount.innerText) - 20;
     coinCount.innerText = newValue;
-     
   } else {
     alert("insufficient Balance for call");
   }
@@ -106,7 +102,6 @@ document.getElementById("call-btn-5").addEventListener("click", () => {
     par.appendChild(newELement);
     const newValue = parseInt(coinCount.innerText) - 20;
     coinCount.innerText = newValue;
-     
   } else {
     alert("insufficient Balance for call");
   }
@@ -125,7 +120,6 @@ document.getElementById("call-btn-6").addEventListener("click", () => {
     par.appendChild(newELement);
     const newValue = parseInt(coinCount.innerText) - 20;
     coinCount.innerText = newValue;
-     
   } else {
     alert("insufficient Balance for call");
   }
@@ -144,7 +138,6 @@ document.getElementById("call-btn-7").addEventListener("click", () => {
     par.appendChild(newELement);
     const newValue = parseInt(coinCount.innerText) - 20;
     coinCount.innerText = newValue;
-     
   } else {
     alert("insufficient Balance for call");
   }
@@ -163,7 +156,6 @@ document.getElementById("call-btn-8").addEventListener("click", () => {
     par.appendChild(newELement);
     const newValue = parseInt(coinCount.innerText) - 20;
     coinCount.innerText = newValue;
-     
   } else {
     alert("insufficient Balance for call");
   }
@@ -182,18 +174,31 @@ document.getElementById("call-btn-9").addEventListener("click", () => {
     par.appendChild(newELement);
     const newValue = parseInt(coinCount.innerText) - 20;
     coinCount.innerText = newValue;
-     
   } else {
     alert("insufficient Balance for call");
   }
 });
 
 // copy functionality
-const copyCount = document.getElementById('copy-count');
-const copy = document.getElementsByClassName('copy');
-for(i=0;i<copy.length;i++){
-  copy[i].addEventListener('click', () =>{
-    const newC = parseInt(copyCount.innerText) + 1;
-    copyCount.innerText = newC;
-  })
+const copyCount = document.getElementById("copy-count");
+const copyBtns = document.getElementsByClassName("copy");
+
+for (let i = 0; i < copyBtns.length; i++) {
+  copyBtns[i].addEventListener("click", (e) => {
+    const card = e.target.closest("section");
+
+    const emNum = card.querySelector("h1[id^='emergency-num']").innerText;
+
+    navigator.clipboard
+      .writeText(emNum)
+      .then(() => {
+        alert(`📋 Number Copied: ${emNum}`);
+
+        const newC = parseInt(copyCount.innerText) + 1;
+        copyCount.innerText = newC;
+      })
+      .catch((err) => {
+        console.error("Failed to copy: ", err);
+      });
+  });
 }
