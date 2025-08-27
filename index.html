@@ -48,7 +48,7 @@
             <section
               class="flex justify-center items-center gap-1 md:gap-3 bg-[#41ff6b1a] p-3 rounded-[50px] md:w-[123px]"
             >
-              <h1 class="font-black text-base">100</h1>
+              <h1 id="coin-count" class="font-black text-base">100</h1>
               <img
                 src="./assets/coin.png"
                 class="size-4 md:size-[24px]"
@@ -91,7 +91,7 @@
         class="parent mt-5 md:mt-12 max-w-[1800px] mx-auto pb-24 md:flex gap-[30px]"
       >
         <div id="cards" class="grid md:grid-cols-3 max-w-[1370px] gap-[30px]">
-          <!-- cards -->
+          <!-- card 1 -->
           <section
             class="flex flex-col gap-3 p-[32px] shadow-xl rounded-[12px] bg-white"
           >
@@ -100,14 +100,16 @@
                 <img src="./assets/emergency.png" alt="" class="size-[32px]" />
                 <i class="fa-solid fa-heart text-[32px]"></i>
               </span>
-              <h1 id="emergency-name"  class="font-hind text-2xl font-bold">
+              <h1 id="emergency-name" class="font-hind text-2xl font-bold">
                 National Emergency Number
               </h1>
-              <p  class="font-robo text-lg text-gray-600">National Emergency</p>
+              <p class="font-robo text-lg text-gray-600">National Emergency</p>
             </div>
 
             <div>
-              <h1 id="emergency-num" class="font-robo font-[700] text-[32px]">999</h1>
+              <h1 id="emergency-num" class="font-robo font-[700] text-[32px]">
+                999
+              </h1>
 
               <h2
                 class="font-hind px-[16px] py-[6px] bg-[#f2f2f2] w-[61px] rounded-[32px] text-center"
@@ -130,7 +132,7 @@
               </button>
             </div>
           </section>
-
+          <!-- card 2 -->
           <section
             class="flex flex-col gap-3 p-[32px] shadow-xl rounded-[12px] bg-white"
           >
@@ -139,14 +141,14 @@
                 <img src="./assets/police.png" alt="" class="size-[32px]" />
                 <i class="fa-solid fa-heart text-[32px]"></i>
               </span>
-              <h1 class="font-hind text-2xl font-bold">
+              <h1 id="emergency-name-2" class="font-hind text-2xl font-bold">
                 Police Helpline Number
               </h1>
               <p class="font-robo text-lg text-gray-600">Police</p>
             </div>
 
             <div>
-              <h1 class="font-robo font-[700] text-[32px]">999</h1>
+              <h1 id="emergency-num-2" class="font-robo font-[700] text-[32px]">999</h1>
 
               <h2
                 class="font-hind px-[16px] py-[6px] bg-[#f2f2f2] w-[61px] rounded-[32px] text-center"
@@ -161,14 +163,14 @@
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
-              <button
+              <button id="call-btn-2"
                 class="w-[182px] text-center h-10 bg-[#00a63e] rounded-lg text-white space-x-2 hover:bg-green-800"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
             </div>
           </section>
-
+          <!-- card 3 -->
           <section
             class="flex flex-col gap-3 p-[32px] shadow-xl rounded-[12px] bg-white"
           >
@@ -181,12 +183,12 @@
                 />
                 <i class="fa-solid fa-heart text-[32px]"></i>
               </span>
-              <h1 class="font-hind text-2xl font-bold">Fire Service Number</h1>
+              <h1 id="emergency-name-3" class="font-hind text-2xl font-bold">Fire Service Number</h1>
               <p class="font-robo text-lg text-gray-600">Fire Service</p>
             </div>
 
             <div>
-              <h1 class="font-robo font-[700] text-[32px]">999</h1>
+              <h1 id="emergency-num-3" class="font-robo font-[700] text-[32px]">999</h1>
 
               <h2
                 class="font-hind px-[16px] py-[6px] bg-[#f2f2f2] w-[61px] rounded-[32px] text-center"
@@ -201,14 +203,14 @@
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
-              <button
+              <button id="call-btn-3"
                 class="w-[182px] text-center h-10 bg-[#00a63e] rounded-lg text-white space-x-2 hover:bg-green-800"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
             </div>
           </section>
-
+          <!-- card 4 -->
           <section
             class="flex flex-col gap-3 p-[32px] shadow-xl rounded-[12px] bg-white"
           >
@@ -217,12 +219,12 @@
                 <img src="./assets/ambulance.png" alt="" class="size-[32px]" />
                 <i class="fa-solid fa-heart text-[32px]"></i>
               </span>
-              <h1 class="font-hind text-2xl font-bold">Ambulance Service</h1>
+              <h1 id="emergency-name-4" class="font-hind text-2xl font-bold">Ambulance Service</h1>
               <p class="font-robo text-lg text-gray-600">Ambulance</p>
             </div>
 
             <div>
-              <h1 class="font-robo font-[700] text-[32px]">1994-999999</h1>
+              <h1 id="emergency-num-4" class="font-robo font-[700] text-[32px]">1994-999999</h1>
 
               <h2
                 class="font-hind px-[16px] py-[6px] bg-[#f2f2f2] w-[61px] rounded-[32px] text-center"
@@ -237,14 +239,14 @@
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
-              <button
+              <button id="call-btn-4"
                 class="w-[182px] text-center h-10 bg-[#00a63e] rounded-lg text-white space-x-2 hover:bg-green-800"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
             </div>
           </section>
-
+          <!-- card 5 -->
           <section
             class="flex flex-col gap-3 p-[32px] shadow-xl rounded-[12px] bg-white"
           >
@@ -253,7 +255,7 @@
                 <img src="./assets/emergency.png" alt="" class="size-[32px]" />
                 <i class="fa-solid fa-heart text-[32px]"></i>
               </span>
-              <h1 class="font-hind text-2xl font-bold">
+              <h1 id="emergency-name-5" class="font-hind text-2xl font-bold">
                 Women & Child Helpline
               </h1>
               <p class="font-robo text-lg text-gray-600">
@@ -262,7 +264,7 @@
             </div>
 
             <div>
-              <h1 class="font-robo font-[700] text-[32px]">109</h1>
+              <h1 id="emergency-num-5" class="font-robo font-[700] text-[32px]">109</h1>
 
               <h2
                 class="font-hind px-[16px] py-[6px] bg-[#f2f2f2] w-[61px] rounded-[32px] text-center"
@@ -277,14 +279,14 @@
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
-              <button
+              <button id="call-btn-5"
                 class="w-[182px] text-center h-10 bg-[#00a63e] rounded-lg text-white space-x-2 hover:bg-green-800"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
             </div>
           </section>
-
+          <!-- card 6 -->
           <section
             class="flex flex-col gap-3 p-[32px] shadow-xl rounded-[12px] bg-white"
           >
@@ -293,14 +295,14 @@
                 <img src="./assets/emergency.png" alt="" class="size-[32px]" />
                 <i class="fa-solid fa-heart text-[32px]"></i>
               </span>
-              <h1 class="font-hind text-2xl font-bold">
+              <h1 id="emergency-name-6" class="font-hind text-2xl font-bold">
                 Anti-Corruption Helpline
               </h1>
               <p class="font-robo text-lg text-gray-600">Anti-Corruption</p>
             </div>
 
             <div>
-              <h1 class="font-robo font-[700] text-[32px]">106</h1>
+              <h1 id="emergency-num-6" class="font-robo font-[700] text-[32px]">106</h1>
 
               <h2
                 class="font-hind px-[16px] py-[6px] bg-[#f2f2f2] w-fit rounded-[32px] text-center"
@@ -315,14 +317,14 @@
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
-              <button
+              <button id="call-btn-6"
                 class="w-[182px] text-center h-10 bg-[#00a63e] rounded-lg text-white space-x-2 hover:bg-green-800"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
             </div>
           </section>
-
+          <!-- card 7 -->
           <section
             class="flex flex-col gap-3 p-[32px] shadow-xl rounded-[12px] bg-white"
           >
@@ -331,14 +333,14 @@
                 <img src="./assets/emergency.png" alt="" class="size-[32px]" />
                 <i class="fa-solid fa-heart text-[32px]"></i>
               </span>
-              <h1 class="font-hind text-2xl font-bold">Electricity Helpline</h1>
+              <h1 id="emergency-name-7" class="font-hind text-2xl font-bold">Electricity Helpline</h1>
               <p class="font-robo text-lg text-gray-600">
                 Electricity Helpline
               </p>
             </div>
 
             <div>
-              <h1 class="font-robo font-[700] text-[32px]">16216</h1>
+              <h1 id="emergency-num-7" class="font-robo font-[700] text-[32px]">16216</h1>
 
               <h2
                 class="font-hind px-[16px] py-[6px] bg-[#f2f2f2] w-fit rounded-[32px] text-center"
@@ -353,14 +355,14 @@
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
-              <button
+              <button id="call-btn-7"
                 class="w-[182px] text-center h-10 bg-[#00a63e] rounded-lg text-white space-x-2 hover:bg-green-800"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
             </div>
           </section>
-
+          <!-- card 8 -->
           <section
             class="flex flex-col gap-3 p-[32px] shadow-xl rounded-[12px] bg-white"
           >
@@ -369,12 +371,12 @@
                 <img src="./assets/brac.png" alt="" class="size-[32px]" />
                 <i class="fa-solid fa-heart text-[32px]"></i>
               </span>
-              <h1 class="font-hind text-2xl font-bold">Brac Helpline</h1>
+              <h1 id="emergency-name-8" class="font-hind text-2xl font-bold">Brac Helpline</h1>
               <p class="font-robo text-lg text-gray-600">Brac</p>
             </div>
 
             <div>
-              <h1 class="font-robo font-[700] text-[32px]">16445</h1>
+              <h1 id="emergency-num-8" class="font-robo font-[700] text-[32px]">16445</h1>
 
               <h2
                 class="font-hind px-[16px] py-[6px] bg-[#f2f2f2] w-[61px] rounded-[32px] text-center"
@@ -389,14 +391,14 @@
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
-              <button
+              <button id="call-btn-8"
                 class="w-[182px] text-center h-10 bg-[#00a63e] rounded-lg text-white space-x-2 hover:bg-green-800"
               >
                 <i class="fa-solid fa-phone"></i> Call
               </button>
             </div>
           </section>
-
+          <!-- card 9 -->
           <section
             class="flex flex-col gap-3 p-[32px] shadow-xl rounded-[12px] bg-white"
           >
@@ -405,14 +407,14 @@
                 <img src="./assets/emergency.png" alt="" class="size-[32px]" />
                 <i class="fa-solid fa-heart text-[32px]"></i>
               </span>
-              <h1 class="font-hind text-2xl font-bold">
+              <h1 id="emergency-name-9" class="font-hind text-2xl font-bold">
                 Bangladesh Railway Helpline
               </h1>
               <p class="font-robo text-lg text-gray-600">Bangladesh Railway</p>
             </div>
 
             <div>
-              <h1 class="font-robo font-[700] text-[32px]">163</h1>
+              <h1 id="emergency-num-9" class="font-robo font-[700] text-[32px]">163</h1>
 
               <h2
                 class="font-hind px-[16px] py-[6px] bg-[#f2f2f2] w-fit rounded-[32px] text-center"
@@ -427,7 +429,7 @@
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
-              <button
+              <button id="call-btn-9"
                 class="w-[182px] text-center h-10 bg-[#00a63e] rounded-lg text-white space-x-2 hover:bg-green-800"
               >
                 <i class="fa-solid fa-phone"></i> Call
@@ -442,14 +444,13 @@
         >
           <section class="flex justify-between items-center mb-5">
             <h1><i class="fa-solid fa-clock"></i>Call History</h1>
-            <button
+            <button id="sob"
               class="bg-[#00a63e] font-robo hover:bg-green-800 px-[36px] py-[12px] rounded-[50px] text-white"
             >
               Clear
             </button>
           </section>
           <!-- cards to be added on click -->
-
         </div>
       </div>
     </main>
